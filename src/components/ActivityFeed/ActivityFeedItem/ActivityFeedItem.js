@@ -11,18 +11,35 @@ import { ActivityItem, ActivityLink } from "./ActivityFeedItem.style";
  * @param {*} task
  * @param {*} users
  */
-const formatTemplate = (template, templateObj, task, users) => {
+const formatTemplate = (
+  template,
+  templateObj,
+  task,
+  users,
+  handleHoverEnter,
+  handleHoverLeave
+) => {
   let formattedTemplate = reactStringReplace(template, templateObj, () => {
     const id = /\d+/.exec(templateObj)[0];
     if (/profiles/.test(templateObj)) {
       return (
-        <ActivityLink key={id} href={`/users/${users[id].slug}`}>
+        <ActivityLink
+          key={id}
+          href={`/users/${users[id].slug}`}
+          onMouseEnter={() => handleHoverEnter(`/users/${users[id].slug}`)}
+          onMouseLeave={() => handleHoverLeave()}
+        >
           {users[id].abbreviated_name}
         </ActivityLink>
       );
     } else if (/task/.test(templateObj)) {
       return (
-        <ActivityLink key={id} href={`/tasks/${task.slug}`}>
+        <ActivityLink
+          key={id}
+          href={`/tasks/${task.slug}`}
+          onMouseEnter={() => handleHoverEnter(`/tasks/${task.slug}`)}
+          onMouseLeave={() => handleHoverLeave()}
+        >
           {task.name}
         </ActivityLink>
       );
@@ -31,14 +48,27 @@ const formatTemplate = (template, templateObj, task, users) => {
   return formattedTemplate;
 };
 
-const ActivityFeedItem = ({ activity, task, users }) => {
+const ActivityFeedItem = ({
+  activity,
+  task,
+  users,
+  handleHoverEnter,
+  handleHoverLeave
+}) => {
   if (!activity || !task || !users) return null;
 
   let template = activity.template;
   const templateObjects = template.match(/{[^}]*\}/g);
 
   templateObjects.forEach(templateObj => {
-    template = formatTemplate(template, templateObj, task, users);
+    template = formatTemplate(
+      template,
+      templateObj,
+      task,
+      users,
+      handleHoverEnter,
+      handleHoverLeave
+    );
   });
 
   return <ActivityItem>{template}</ActivityItem>;

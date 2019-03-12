@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityFeedItem renders correctly given props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ActivityFeedItem
+    activity={
+      Object {
+        "created_at": "2015-06-24T16:36:15+10:00",
+        "event": "posted",
+        "profile_ids": Array [
+          1,
+        ],
+        "task_id": 1,
+        "template": "{ profiles:1 } posted a task { task:1 }",
+      }
+    }
+    handleHoverEnter={[MockFunction]}
+    handleHoverLeave={[MockFunction]}
+    task={
+      Object {
+        "id": 1,
+        "name": "Test Task",
+        "slug": "test-slug",
+      }
+    }
+    users={
+      Object {
+        "1": Object {
+          "abbreviated_name": "Jeremy O",
+          "id": 1,
+          "slug": "jeremy-o",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        "",
+        <ForwardRef
+          href="/users/jeremy-o"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          Jeremy O
+        </ForwardRef>,
+        " posted a task ",
+        <ForwardRef
+          href="/tasks/test-slug"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          Test Task
+        </ForwardRef>,
+        "",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "",
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "children": "Jeremy O",
+          "href": "/users/jeremy-o",
+          "onMouseEnter": [Function],
+          "onMouseLeave": [Function],
+        },
+        "ref": null,
+        "rendered": "Jeremy O",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  color: #008fb4;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      " posted a task ",
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "children": "Test Task",
+          "href": "/tasks/test-slug",
+          "onMouseEnter": [Function],
+          "onMouseLeave": [Function],
+        },
+        "ref": null,
+        "rendered": "Test Task",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  color: #008fb4;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "",
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  padding: 2rem;
+  border-bottom: 1px solid #e8e8e8;
+  text-transform: uppercase;
+  color: #829094;
+  font-weight: 600;
+",
+        ],
+      },
+      "displayName": "styled.li",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "li",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          "",
+          <ForwardRef
+            href="/users/jeremy-o"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Jeremy O
+          </ForwardRef>,
+          " posted a task ",
+          <ForwardRef
+            href="/tasks/test-slug"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Test Task
+          </ForwardRef>,
+          "",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "",
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "children": "Jeremy O",
+            "href": "/users/jeremy-o",
+            "onMouseEnter": [Function],
+            "onMouseLeave": [Function],
+          },
+          "ref": null,
+          "rendered": "Jeremy O",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+  color: #008fb4;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+",
+              ],
+            },
+            "displayName": "styled.a",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "a",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        " posted a task ",
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "children": "Test Task",
+            "href": "/tasks/test-slug",
+            "onMouseEnter": [Function],
+            "onMouseLeave": [Function],
+          },
+          "ref": null,
+          "rendered": "Test Task",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+  color: #008fb4;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+",
+              ],
+            },
+            "displayName": "styled.a",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "a",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        "",
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  padding: 2rem;
+  border-bottom: 1px solid #e8e8e8;
+  text-transform: uppercase;
+  color: #829094;
+  font-weight: 600;
+",
+          ],
+        },
+        "displayName": "styled.li",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "li",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

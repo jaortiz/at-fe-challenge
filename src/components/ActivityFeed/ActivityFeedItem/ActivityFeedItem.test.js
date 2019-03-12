@@ -13,7 +13,7 @@ describe("ActivityFeedItem", () => {
 
   const task = {
     id: 1,
-    name: "test",
+    name: "Test Task",
     slug: "test-slug"
   };
 
@@ -31,8 +31,18 @@ describe("ActivityFeedItem", () => {
   });
 
   it("renders correctly given props", () => {
+    const mock = jest.fn();
     const wrapper = shallow(
-      <ActivityFeedItem activity={activity} task={task} users={users} />
+      <ActivityFeedItem
+        activity={activity}
+        task={task}
+        users={users}
+        handleHoverEnter={mock}
+        handleHoverLeave={mock}
+      />
     );
+
+    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.text()).toEqual("Jeremy O posted a task Test Task");
   });
 });
